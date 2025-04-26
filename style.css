@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0 20px; 
+  background-color: #f5f5f5; 
+}
+.container {
+  max-width: 1200px; /* Content er maximum width */
+  margin: 0 auto; /* Center kore deya */
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* halkabhabe shadow */
+  border-radius: 8px; /* halka round corner */
+}
+/* =========================empowering progress============================================================== */
+.first_part {
+ display: flex;
+ justify-content: space-between;
+}
+
+.empowering_progress, img{
+  width: fit-content;
+  width: 200px;
+  height: 200px;
+}
+.empowering_progress {
+  width: 300px;
+  transition: all 0.5s ease; /* Smooth transition on hover */
+}
+
+.empowering_progress:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
