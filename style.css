@@ -20,6 +20,7 @@ body {
 /* =========================empowering progress============================================================== */
 .first_part {
  display: flex;
+ align-items: center;
  justify-content: space-between;
 }
 
@@ -36,4 +37,28 @@ body {
 .empowering_progress:hover {
   transform: scale(1.1);
   opacity: 0.8;
+}
+/* ==========================circular ================================== */
+.circular_section{
+  border:8px black;
+}
+
+#menu_wheel {
+  
+  width: 700px;
+  height: 700px;
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Hover korle animation pause hobe */
+#menu_wheel:hover {
+  animation-play-state: paused;
 }
