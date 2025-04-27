@@ -20,45 +20,46 @@ body {
 /* =========================empowering progress============================================================== */
 .first_part {
  display: flex;
- align-items: center;
- justify-content: space-between;
+ justify-content:space-around;
+}
+.empowering_progress {
+  /* width: 400px; */
+   /* height: 200px;  */
+   overflow: hidden;
+  transition: all 0.9s ease; 
 }
 
 .empowering_progress, img{
-  width: fit-content;
-  width: 200px;
-  height: 200px;
-}
-.empowering_progress {
-  width: 300px;
-  transition: all 0.5s ease; /* Smooth transition on hover */
+  /* margin-top: -120px; */
+  width: 400px;
+  height: 250px;
+  object-fit:cover; 
+  object-position: center;
 }
 
 .empowering_progress:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
+  /* zoom */
+  /* transform: scale(1.2); */
+
+  /* rotate */
+  /* transform: rotate(-15deg);  */
+
+/* transform: skew(10deg, 10deg); */
+/* fade out */
+  /* opacity: 0.8; */
+  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); */
+  /*  3D Rotate */
+  /* transform: perspective(400px) rotateY(20deg); */
+  animation: bounce 0.90s;
+}
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-20px); }
+  50% { transform: translateY(0); }
+  70% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 /* ==========================circular ================================== */
-.circular_section{
-  border:8px black;
-}
 
-#menu_wheel {
-  
-  width: 700px;
-  height: 700px;
-  animation: spin 5s linear infinite;
-}
-@keyframes spin {
-  from {
-      transform: rotate(0deg);
-  }
-  to {
-      transform: rotate(360deg);
-  }
-}
 
-/* Hover korle animation pause hobe */
-#menu_wheel:hover {
-  animation-play-state: paused;
-}
+
