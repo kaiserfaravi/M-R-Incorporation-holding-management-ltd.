@@ -63,3 +63,33 @@ body {
 
 
 
+/* ==============================history=================================== */
+
+ .history {
+  
+  text-align: center;
+}
+
+.history h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.history img {
+  width: 800px;
+  height: auto;
+  display: inline-block;
+  transition: transform 0.4s ease-in-out;
+}
+ #his2{
+  width: 800px;
+  margin-top: -9px;
+  height: auto;
+  display: inline-block;
+  transition: transform 0.4s ease-in-out;
+ }
+ .history img:hover,
+ #his2:hover {
+   transform: scale(1.02) skew(1deg, 20deg);
+ }
+/* ============================================================== */
